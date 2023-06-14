@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author jeand
+ *
+ */
+module chessSystem {
+}
