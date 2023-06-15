@@ -2,6 +2,9 @@ package boardgame;
 
 public class Position {
 
+	
+//Classe para representar uma posição no tabuleiro
+
 	private int row;
 	private int column;
 	
