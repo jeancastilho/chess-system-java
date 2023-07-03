@@ -29,6 +29,12 @@ public class Position {
 		this.column = column;
 	}
 	
+	public void setValues(int row, int column) {
+		this.row = row;
+		this.column = column;
+	}
+	
+	
 	//toString realizado para imprimir as posições na tela
 	@Override
 	public String toString() {
