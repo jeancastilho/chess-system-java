@@ -7,18 +7,18 @@ import chess.Color;
 
 //CLASSE DA PEÇA "REI"
 
-public class King extends ChessPiece {
+public class Knight extends ChessPiece {
 
-	public King(Board board, Color color) {
+	public Knight(Board board, Color color) {
 		super(board, color);
 	}
 	
 	@Override
 	public String toString() {
-		return "K";
+		return "N";
 	}
 	
-	//METODO AUXILIAR PARA SABER SE A PEÇA "REI" PODE MOVER PARA ALGUM LUGAR
+	//METODO AUXILIAR PARA SABER SE A PEÇA "CAVALO" PODE MOVER PARA ALGUM LUGAR
 	private boolean canMove(Position position) {
 		ChessPiece p = (ChessPiece)getBoard().piece(position);
 		return p == null || p.getColor() != getColor();
@@ -30,50 +30,50 @@ public class King extends ChessPiece {
 		
 		Position p = new Position(0,0);
 		
-		//VERIFICA AS POSIÇÕES DISPONIVEIS ACIMA
-		p.setValues(position.getRow() - 1, position.getColumn());
+		
+		p.setValues(position.getRow() - 1, position.getColumn()-2);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		//VERIFICA AS POSIÇÕES DISPONIVEIS ABAIXO
-		p.setValues(position.getRow() + 1, position.getColumn());
+		
+		p.setValues(position.getRow() - 2, position.getColumn() -1 );
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// VERIFICA AS POSIÇÕES DISPONIVEIS ESQUERDA
-		p.setValues(position.getRow(), position.getColumn() - 1);
+		
+		p.setValues(position.getRow() - 2, position.getColumn() + 1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// VERIFICA AS POSIÇÕES DISPONIVEIS DIREITA
-		p.setValues(position.getRow(), position.getColumn() + 1);
+		
+		p.setValues(position.getRow() -1, position.getColumn() + 2);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// VERIFICA AS POSIÇÕES DISPONIVEIS NO NOROESTE (DIAGONAL SUPERIOR ESQUEDA )
-		p.setValues(position.getRow() - 1, position.getColumn() - 1);
+		
+		p.setValues(position.getRow() + 1, position.getColumn() + 2);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// VERIFICA AS POSIÇÕES DISPONIVEIS NO NORDESTE (DIAGONAL SUPERIOR DIREITA )
-		p.setValues(position.getRow() - 1, position.getColumn() + 1);
+		
+		p.setValues(position.getRow() + 2, position.getColumn() + 1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// VERIFICA AS POSIÇÕES DISPONIVEIS NO SUDOESTE (DIAGONAL INFERIOR ESQUERDA )
-		p.setValues(position.getRow() + 1, position.getColumn() - 1);
+		
+		p.setValues(position.getRow() + 2, position.getColumn() - 1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// VERIFICA AS POSIÇÕES DISPONIVEIS NO SUDESTE (DIAGONAL INFERIOR DIREITA )
-		p.setValues(position.getRow() + 1, position.getColumn() + 1);
+		
+		p.setValues(position.getRow() + 1, position.getColumn() - 2);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
