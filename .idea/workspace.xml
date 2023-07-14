@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="939c8dca-ff3f-42fc-96a2-811c2272ac4a" name="Changes" comment="Special move - En passant">
+    <list default="true" id="939c8dca-ff3f-42fc-96a2-811c2272ac4a" name="Changes" comment="Special move - Promotion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessMatch.java" afterDir="false" />
@@ -178,7 +178,7 @@
       <workItem from="1689161907209" duration="7806000" />
       <workItem from="1689181841149" duration="2095000" />
       <workItem from="1689248047869" duration="8449000" />
-      <workItem from="1689286950528" duration="5025000" />
+      <workItem from="1689286950528" duration="6150000" />
     </task>
     <task id="LOCAL-00001" summary="Special move - En passant">
       <created>1689289590176</created>
@@ -187,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689289590176</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Special move - Promotion">
+      <created>1689292478764</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689292478764</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +214,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Special move - En passant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Special move - En passant" />
+    <MESSAGE value="Special move - Promotion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Special move - Promotion" />
   </component>
 </project>
